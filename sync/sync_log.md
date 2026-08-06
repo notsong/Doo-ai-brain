@@ -15,3 +15,4 @@
 ---
 
 *格式：`YYYY-MM-DD HH:MM` | `机器名` | `一句话摘要` | `修改的文件列表`*
+2026-08-06 16:30 | laptop | Hermes | 新增 knowledge/hermes-metis-workflow.md（Hermes+CC 协作模式）；decisions 追加 Metis 圆形视场/B.5/B.6 决策记录
