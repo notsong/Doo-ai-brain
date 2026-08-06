@@ -1,33 +1,33 @@
-# Current Status
+# 当前状态
 
-> Snapshot of all active projects. Updated after each `/brain-sync`.
-> AI agents: read this first to understand what I'm working on.
+> 所有活跃项目的快照。每次 `/brain-sync` 后更新。
+> AI Agent：先读这个，了解我当前在做什么。
 
-## Active Projects
+## 活跃项目
 
-| Project | Status | Priority | Last Updated | Key Focus |
-|---------|--------|----------|--------------|-----------|
+| 项目 | 状态 | 优先级 | 最后更新 | 当前重点 |
+|------|------|--------|----------|----------|
 | grain_size | [ ] | - | - | - |
 | dinov3 | [ ] | - | - | - |
 | ai_server | [ ] | - | - | - |
 | doo_label | [ ] | - | - | - |
 
-## Current Focus
+## 当前焦点
 
-<!-- What am I actively working on right now? -->
+<!-- 我现在正在做什么？ -->
 
-## Blockers
+## 阻塞项
 
-<!-- Anything blocking progress? -->
+<!-- 有什么阻碍进展？ -->
 
-## Recent Achievements
+## 近期成果
 
-<!-- What was recently completed? -->
+<!-- 最近完成了什么？ -->
 
-## Up Next
+## 下一步计划
 
-<!-- What's planned next? -->
+<!-- 接下来准备做什么？ -->
 
 ---
 
-*Last synced: [date]*
+*最后同步：[日期]*

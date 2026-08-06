@@ -1,23 +1,23 @@
-# Deployment Knowledge
+# 部署知识
 
-> Model deployment, packaging, and production patterns.
+> 模型部署、打包和生产环境模式。
 
-## Common Patterns
+## 常用模式
 
-<!-- TODO: Serving patterns, API design -->
+<!-- TODO: 服务模式、API 设计 -->
 
-## Tools
+## 工具
 
-<!-- TODO: Docker, PyInstaller, ONNX Runtime, Triton, etc. -->
+<!-- TODO: Docker、PyInstaller、ONNX Runtime、Triton 等 -->
 
-## Pitfalls
+## 踩过的坑
 
-<!-- TODO: Dependency management, platform issues -->
+<!-- TODO: 依赖管理、平台问题 -->
 
-## PyInstaller Notes
+## PyInstaller 笔记
 
-<!-- TODO: Specific issues with ML model packaging -->
+<!-- TODO: ML 模型打包的特殊问题 -->
 
-## Resources
+## 参考资料
 
-<!-- TODO: Useful references -->
+<!-- TODO: 有用的参考 -->

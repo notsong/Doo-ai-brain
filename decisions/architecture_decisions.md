@@ -1,26 +1,26 @@
-# Architecture Decision Records
+# 架构决策记录
 
-> Key architectural decisions across all projects.
-> Format: Date, Decision, Context, Alternatives Considered, Rationale, Consequences.
+> 跨项目的关键架构决策。
+> 格式：日期、决策、背景、备选方案、理由、后果。
 
-## Decisions
+## 决策记录
 
-<!-- TODO: Record significant architecture decisions here -->
+<!-- TODO: 在这里记录重要的架构决策 -->
 
-### Template
+### 模板
 
 ```
-## YYYY-MM-DD: [Decision Title]
+## YYYY-MM-DD：[决策标题]
 
-**Context**: [What was the situation?]
+**背景**：[当时是什么情况？]
 
-**Decision**: [What did we decide?]
+**决策**：[我们决定了什么？]
 
-**Alternatives Considered**:
-- Option A: [Why rejected?]
-- Option B: [Why rejected?]
+**考虑过的备选方案**：
+- 方案 A：[为什么否决？]
+- 方案 B：[为什么否决？]
 
-**Rationale**: [Why this choice?]
+**理由**：[为什么选这个？]
 
-**Consequences**: [What resulted from this?]
+**后果**：[带来了什么结果？]
 ```

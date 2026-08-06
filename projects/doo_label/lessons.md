@@ -1,15 +1,15 @@
-# Doo Label — Lessons Learned
+# Doo Label — 经验教训
 
-> Non-obvious insights, pitfalls, and reusable patterns.
+> 非显而易见的坑和可复用模式。
 
-## Pitfalls
-
-<!-- TODO -->
-
-## Reusable Patterns
+## 踩过的坑
 
 <!-- TODO -->
 
-## Environment Issues
+## 可复用模式
+
+<!-- TODO -->
+
+## 环境问题
 
 <!-- TODO -->

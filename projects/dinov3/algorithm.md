@@ -1,23 +1,23 @@
-# DINOv3 — Algorithm
+# DINOv3 — 算法设计
 
-> Algorithm design, model architecture, and technical approach.
+> 算法设计、模型架构和技术方案。
 
-## Approach
+## 整体方案
 
-<!-- TODO: Overall approach -->
+<!-- TODO: 总体思路 -->
 
-## Model Architecture
+## 模型架构
 
-<!-- TODO: Model structure, retrieval pipeline -->
+<!-- TODO: 模型结构、检索管线 -->
 
-## Data Pipeline
+## 数据管线
 
-<!-- TODO: Feature extraction, indexing, search -->
+<!-- TODO: 特征提取、索引构建、搜索 -->
 
-## Key Parameters
+## 关键参数
 
-<!-- TODO: Important parameters and rationale -->
+<!-- TODO: 重要参数及选择理由 -->
 
-## Known Limitations
+## 已知局限
 
-<!-- TODO: What are the current limits? -->
+<!-- TODO -->

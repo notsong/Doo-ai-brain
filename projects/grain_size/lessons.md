@@ -1,15 +1,15 @@
-# Grain Size — Lessons Learned
+# 晶粒度 — 经验教训
 
-> Non-obvious insights, pitfalls, and reusable patterns discovered during development.
+> 开发过程中发现的非显而易见的坑和可复用模式。
 
-## Pitfalls
+## 踩过的坑
 
-<!-- TODO: What surprised us? What was harder than expected? -->
+<!-- TODO: 什么让我们意外？什么比预想的难？ -->
 
-## Reusable Patterns
+## 可复用模式
 
-<!-- TODO: What patterns from this project apply elsewhere? -->
+<!-- TODO: 这个项目里的哪些模式可以用到其他地方？ -->
 
-## Environment Issues
+## 环境问题
 
-<!-- TODO: Setup gotchas, dependency hell, platform-specific issues -->
+<!-- TODO: 配置踩坑、依赖冲突、平台问题 -->

@@ -1,27 +1,27 @@
-# Grain Size Analysis — Overview
+# 晶粒度分析 — 项目概览
 
-> Project overview, objectives, and current state.
+> 项目简介、目标和当前状态。
 
-## What Is This Project?
+## 项目简介
 
-<!-- TODO: Brief description of what grain_size does -->
+<!-- TODO: 简要描述这个项目做什么 -->
 
-## Objectives
+## 目标
 
-<!-- TODO: What are we trying to achieve? -->
+<!-- TODO: 我们要达成什么？ -->
 
-## Tech Stack
+## 技术栈
 
-<!-- TODO: Key technologies used -->
+<!-- TODO: 主要用了哪些技术 -->
 
-## Current State
+## 当前状态
 
-<!-- TODO: Where does this project stand right now? -->
+<!-- TODO: 项目目前处于什么阶段？ -->
 
-## Key Files & Entry Points
+## 关键文件与入口
 
-<!-- TODO: How to navigate the codebase -->
+<!-- TODO: 怎么在代码库中导航 -->
 
-## Related Resources
+## 参考资料
 
-<!-- TODO: Papers, docs, references -->
+<!-- TODO: 论文、文档、参考链接 -->

@@ -1,85 +1,85 @@
-# AI Rules for Doo-ai-brain
+# AI 大脑使用规则
 
-> **Read this first.** These rules tell any AI agent how to use this knowledge base.
+> **所有 AI Agent 必须先读这个文件。** 它定义了如何使用这个知识库。
 
-## About Me (Doo)
+## 关于我（Doo）
 
-<!-- TODO: Fill in your background, primary tech stack, and long-term goals -->
+<!-- TODO: 填写你的背景、主要技术栈和长期目标 -->
 
-- **Role**: AI/Computer Vision Engineer
-- **Primary Languages**: Python
-- **Primary Frameworks**: PyTorch, OpenCV, ONNX
-- **Domains**: Computer Vision, Deep Learning, Model Deployment
-- **Long-term Focus**: [To be filled]
+- **角色**：AI / 计算机视觉工程师
+- **主要语言**：Python
+- **主要框架**：PyTorch、OpenCV、ONNX
+- **领域**：计算机视觉、深度学习、模型部署
+- **长期方向**：[待填写]
 
-## How to Read This Repository
+## 读取顺序
 
-### Mandatory Reading (Before Any Task)
+### 任何任务开始前必须读
 
-1. `AI_RULES.md` (this file) — understand the rules
-2. `profile/engineer_profile.md` — know my background and preferences
-3. `status/current_status.md` — know what's currently active
+1. `AI_RULES.md`（本文件）—— 了解规则
+2. `profile/engineer_profile.md` —— 了解我的背景和偏好
+3. `status/current_status.md` —— 了解当前项目状态
 
-### Task-Specific Reading
+### 按需读取
 
-- Before working on a project → read `projects/<project>/overview.md`
-- Before making architecture decisions → read `decisions/architecture_decisions.md`
-- When encountering specific tech → check `knowledge/<technology>.md`
+- 接手某个项目 → 先读 `projects/<项目名>/overview.md`
+- 做架构决策前 → 读 `decisions/architecture_decisions.md`
+- 遇到特定技术 → 查 `knowledge/<技术名>.md`
 
-## What Should Be Recorded
+## 什么应该记录
 
-Record information that has **long-term value across sessions**:
+记录具有**跨会话长期价值**的信息：
 
-| Category | Examples |
-|----------|----------|
-| **Technical Decisions** | Why chose X over Y, architecture tradeoffs |
-| **Project Experience** | Key findings, non-obvious pitfalls, solutions |
-| **Experiment Results** | What was tested, results, conclusions |
-| **Failed Approaches** | What didn't work and WHY (saves time later) |
-| **Solutions** | How a difficult problem was solved |
-| **Engineering Patterns** | Reusable patterns discovered during work |
-| **Environment Setup** | Non-trivial config that took time to figure out |
+| 类别 | 示例 |
+|------|------|
+| **技术决策** | 为什么选 X 而不是 Y，架构权衡 |
+| **项目经验** | 关键发现、非显而易见的坑、解决方案 |
+| **实验结果** | 测试了什么、结果如何、结论 |
+| **失败方案** | 什么不行以及为什么（避免重复踩坑） |
+| **解决方案** | 某个难题是怎么解决的 |
+| **工程模式** | 工作中发现的可复用模式 |
+| **环境配置** | 花时间才搞定的非平凡配置 |
 
-## What Should NOT Be Recorded
+## 什么不应该记录
 
-Do NOT record:
+不要记录：
 
-- Routine code changes (variable renames, formatting)
-- Temporary debugging sessions with no lasting insight
-- Information already well-documented in the project's own repo
-- Trivial or obvious facts
-- Session logs or chat transcripts
+- 日常代码修改（改个变量名、格式化）
+- 没有收获的临时调试过程
+- 项目自己仓库里已经写得很清楚的内容
+- 显而易见的常识
+- 会话日志或聊天记录
 
-## Golden Rule
+## 黄金法则
 
-> **"If I join a new project 6 months from now, what do I need to know?"**
+> **"如果 6 个月后我接手一个新项目，我需要知道什么？"**
 
-If information helps answer that question, record it. If not, skip it.
+能帮助回答这个问题的信息就记录。不能就跳过。
 
-## Syncing Protocol
+## 同步方式
 
-### Claude Code: `/brain-sync`
+### Claude Code：`/brain-sync`
 
-1. Review the current session/task
-2. Identify information with long-term value
-3. Update or create relevant Markdown files
-4. Update `sync/sync_log.md`
-5. Run: `git add -A && git commit -m "sync: <summary>" && git push`
+1. 回顾当前会话/任务
+2. 识别有长期价值的内容
+3. 更新或创建相关 Markdown 文件
+4. 更新 `sync/sync_log.md`
+5. 执行：`git add -A && git commit -m "sync: <摘要>" && git push`
 
-### Before Starting Work
+### 开始工作前
 
 ```bash
-cd <path-to>/Doo-ai-brain
+cd <路径>/Doo-ai-brain
 git pull
 ```
 
-Then instruct the AI agent to read relevant files.
+然后让 AI Agent 读取相关文件。
 
-## Hermes (Future)
+## Hermes（未来）
 
-Hermes is my long-term AI technical brain. It will:
-- Read this repository for project context
-- Contribute knowledge and experiment summaries
-- Help design technical solutions based on accumulated experience
+Hermes 是我的长期 AI 技术大脑。它将：
+- 读取这个仓库获取项目上下文
+- 贡献知识和实验总结
+- 基于积累的经验帮助设计技术方案
 
-When Hermes is active, update `status/current_status.md` to reflect its role.
+当 Hermes 激活时，更新 `status/current_status.md` 反映其角色。

@@ -1,46 +1,46 @@
 # Doo-ai-brain
 
-**Doo's Personal AI Engineering Brain**
+**Doo 的个人 AI 工程大脑**
 
-A long-term technical knowledge base designed to be read by both humans and AI agents.
+一个长期技术知识库，设计目标是任何 AI Agent（Claude Code、Hermes、ChatGPT 等）和人类都能直接阅读。
 
-## Purpose
+## 目的
 
-This repository serves as my external AI brain — a persistent, version-controlled knowledge base that any AI agent (Claude Code, Hermes, ChatGPT, etc.) can read to understand my projects, technical decisions, experiments, and engineering patterns.
+这个仓库是我的外部 AI 大脑——一个持久化、版本可控的知识库。任何 AI Agent 都可以通过阅读它来理解我的项目、技术决策、实验记录和工程模式。
 
-## Repository Structure
+## 仓库结构
 
 ```
 Doo-ai-brain/
-├── README.md                 # This file
-├── AI_RULES.md               # Rules for AI agents reading this repo
-├── profile/                  # My engineering profile and working style
-├── status/                   # Current status of all active projects
-├── projects/                 # Per-project knowledge and experience
-├── knowledge/                # Technology-specific knowledge
-├── experiments/              # Standalone experiment records
-├── decisions/                # Architecture decision records
-└── sync/                    # Sync logs
+├── README.md                 # 本文件
+├── AI_RULES.md               # AI Agent 读取规则
+├── profile/                  # 我的工程师画像和工作风格
+├── status/                   # 所有活跃项目的当前状态
+├── projects/                 # 按项目组织的知识和经验
+├── knowledge/                # 技术领域知识
+├── experiments/              # 独立实验记录
+├── decisions/                # 架构决策记录
+└── sync/                    # 同步日志
 ```
 
-## How AI Agents Use This
+## AI Agent 使用方式
 
-1. **On startup**: Read `AI_RULES.md` first, then `status/current_status.md`
-2. **Before working on a project**: Read `projects/<project>/overview.md` and related docs
-3. **When stuck**: Search `knowledge/` for relevant technical patterns
-4. **After important work**: Update relevant files and sync back
+1. **启动时**：先读 `AI_RULES.md`，再读 `status/current_status.md`
+2. **接手项目前**：阅读 `projects/<项目名>/overview.md` 和相关文档
+3. **遇到技术问题**：搜索 `knowledge/` 中的技术笔记
+4. **完成重要工作后**：更新相关文件并同步回仓库
 
-## How I Use This
+## 我的使用方式
 
-1. Complete significant task
-2. Run `/brain-sync` in Claude Code
-3. Agent reviews session, identifies long-term value
-4. Agent updates relevant Markdown files
+1. 完成一个有价值的任务
+2. 在 Claude Code 中执行 `/brain-sync`
+3. Agent 回顾会话，识别长期价值
+4. Agent 更新相关 Markdown 文件
 5. Git commit + push
 
-## Principles
+## 核心原则
 
-- **Tool-agnostic**: Pure Markdown, readable by any AI or human
-- **Signal over noise**: Record decisions, experiments, failures — not trivial edits
-- **Version controlled**: Full history of how my thinking evolves
-- **Bidirectional**: Both desktop and laptop are contributors
+- **工具无关**：纯 Markdown，任何 AI 或人类都能读
+- **宁缺毋滥**：记录决策、实验、失败——不记录无意义的修改
+- **版本可控**：完整记录技术思考的演进
+- **双向同步**：台式机和笔记本都是知识贡献者

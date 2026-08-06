@@ -1,23 +1,23 @@
-# CUDA Knowledge
+# CUDA 知识
 
-> CUDA programming, GPU optimization, and troubleshooting.
+> CUDA 编程、GPU 优化和故障排查。
 
-## Common Patterns
+## 常用模式
 
-<!-- TODO: CUDA usage patterns -->
+<!-- TODO: CUDA 使用模式 -->
 
-## Performance Tips
+## 性能技巧
 
-<!-- TODO: Memory management, kernel optimization -->
+<!-- TODO: 显存管理、kernel 优化 -->
 
-## Pitfalls
+## 踩过的坑
 
-<!-- TODO: CUDA version compatibility, OOM handling -->
+<!-- TODO: CUDA 版本兼容、OOM 处理 -->
 
-## Environment Setup
+## 环境配置
 
-<!-- TODO: CUDA toolkit, cuDNN versions -->
+<!-- TODO: CUDA Toolkit、cuDNN 版本配套 -->
 
-## Resources
+## 参考资料
 
-<!-- TODO: Useful references -->
+<!-- TODO: 有用的参考 -->

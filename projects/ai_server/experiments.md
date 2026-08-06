@@ -1,17 +1,17 @@
-# AI Server — Experiments
+# AI 服务端 — 实验记录
 
-> Experiment records, results, and learnings.
+> 实验记录、结果和总结。
 
-## Experiment Log
+## 实验日志
 
-| Date | Experiment | Hypothesis | Result | Conclusion |
-|------|-----------|------------|--------|------------|
+| 日期 | 实验 | 假设 | 结果 | 结论 |
+|------|------|------|------|------|
 | - | - | - | - | - |
 
-## Key Findings
+## 关键发现
 
 <!-- TODO -->
 
-## Failed Approaches
+## 失败方案
 
 <!-- TODO -->

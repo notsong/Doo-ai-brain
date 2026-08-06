@@ -1,23 +1,23 @@
-# OpenCV Knowledge
+# OpenCV 知识
 
-> OpenCV patterns, tips, and pitfalls collected from projects.
+> 从项目中积累的 OpenCV 模式、技巧和坑。
 
-## Common Patterns
+## 常用模式
 
-<!-- TODO: Reusable OpenCV patterns -->
+<!-- TODO: 可复用的 OpenCV 模式 -->
 
-## Performance Tips
+## 性能技巧
 
-<!-- TODO: Image processing optimization -->
+<!-- TODO: 图像处理优化 -->
 
-## Pitfalls
+## 踩过的坑
 
-<!-- TODO: Color space issues, version differences, etc. -->
+<!-- TODO: 色彩空间问题、版本差异等 -->
 
-## Platform-Specific Issues
+## 平台差异
 
-<!-- TODO: Windows vs Linux issues -->
+<!-- TODO: Windows vs Linux 的问题 -->
 
-## Resources
+## 参考资料
 
-<!-- TODO: Useful references -->
+<!-- TODO: 有用的参考 -->

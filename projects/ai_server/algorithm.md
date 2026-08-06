@@ -1,23 +1,23 @@
-# AI Server — Algorithm
+# AI 服务端 — 架构设计
 
-> Algorithm design, model serving architecture, and technical approach.
+> 模型服务架构、推理管线和设计方案。
 
-## Approach
+## 整体方案
 
-<!-- TODO: Overall serving approach -->
+<!-- TODO: 总体服务方案 -->
 
-## Architecture
+## 架构
 
-<!-- TODO: Server architecture, model loading, inference pipeline -->
+<!-- TODO: 服务架构、模型加载、推理管线 -->
 
-## API Design
+## API 设计
 
-<!-- TODO: Endpoints, request/response formats -->
+<!-- TODO: 接口定义、请求/响应格式 -->
 
-## Performance
+## 性能
 
-<!-- TODO: Latency, throughput, optimization notes -->
+<!-- TODO: 延迟、吞吐量、优化方向 -->
 
-## Known Limitations
+## 已知局限
 
 <!-- TODO -->

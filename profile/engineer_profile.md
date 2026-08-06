@@ -1,44 +1,44 @@
-# Engineer Profile
+# 工程师画像
 
-> My technical background, skills, preferences, and goals.
-> AI agents: read this to understand who you're working with.
+> 我的技术背景、技能、偏好和目标。
+> AI Agent：读这个来了解你在和谁合作。
 
-## Background
+## 背景
 
-<!-- TODO: Fill in your professional background -->
+<!-- TODO: 填写你的专业背景 -->
 
-## Technical Skills
+## 技术能力
 
-### Strong
-<!-- e.g., PyTorch, Python, Computer Vision -->
+### 精通
+<!-- 例如：PyTorch、Python、计算机视觉 -->
 
-### Proficient
-<!-- e.g., OpenCV, ONNX, Docker -->
+### 熟练
+<!-- 例如：OpenCV、ONNX、Docker -->
 
-### Learning
-<!-- e.g., Rust, CUDA, MLOps -->
+### 学习中
+<!-- 例如：Rust、CUDA、MLOps -->
 
-## Preferred Tech Stack
+## 技术栈偏好
 
-- **Language**: Python
-- **ML Framework**: PyTorch
-- **Computer Vision**: OpenCV, ONNX
-- **Deployment**: [To be filled]
-- **OS**: Windows, Linux
+- **语言**：Python
+- **深度学习框架**：PyTorch
+- **计算机视觉**：OpenCV、ONNX
+- **部署**：[待填写]
+- **操作系统**：Windows、Linux
 
-## Coding Preferences
+## 编码偏好
 
-<!-- TODO: Describe your coding style, conventions, pet peeves -->
+<!-- TODO: 描述你的编码风格、习惯、不能忍的事情 -->
 
-- Prefer immutable patterns
-- Small focused files over large modules
-- Explicit error handling
-- Type hints always
+- 偏向不可变模式
+- 小而专注的文件优于大而全的模块
+- 明确处理错误，不吞异常
+- 始终用类型标注
 
-## Long-Term Goals
+## 长期目标
 
-<!-- TODO: What are you working toward? -->
+<!-- TODO: 你在往什么方向努力？ -->
 
-## Project Portfolio
+## 项目清单
 
-See `projects/` for detailed project documentation.
+详见 `projects/` 目录下各项目文档。

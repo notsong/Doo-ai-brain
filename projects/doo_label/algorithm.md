@@ -1,23 +1,23 @@
-# Doo Label — Algorithm
+# Doo Label — 算法设计
 
-> Algorithm design, labeling logic, and technical approach.
+> 标注逻辑、数据模型和技术方案。
 
-## Approach
+## 整体方案
 
-<!-- TODO: Overall approach -->
+<!-- TODO: 总体思路 -->
 
-## Labeling Logic
+## 标注逻辑
 
-<!-- TODO: How does labeling work? -->
+<!-- TODO: 标注流程是怎样的？ -->
 
-## Data Model
+## 数据模型
 
-<!-- TODO: Label format, schema -->
+<!-- TODO: 标注格式、数据结构 -->
 
-## Key Parameters
+## 关键参数
 
 <!-- TODO -->
 
-## Known Limitations
+## 已知局限
 
 <!-- TODO -->

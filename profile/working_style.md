@@ -1,38 +1,38 @@
-# Working Style
+# 工作风格
 
-> How I work, communicate, and prefer to collaborate with AI agents.
+> 我的工作方式、沟通偏好，以及如何与 AI Agent 协作。
 
-## Communication
+## 沟通风格
 
-<!-- TODO: Describe your communication preferences -->
+<!-- TODO: 描述你的沟通偏好 -->
 
-## Development Workflow
+## 开发流程
 
-- **Planning**: Plan first, code later
-- **Testing**: TDD preferred, 80%+ coverage target
-- **Review**: Code review after every significant change
-- **Commit**: Conventional commits format
+- **先规划后编码**：不拿起来就写
+- **测试驱动**：偏好 TDD，80% 以上覆盖率
+- **代码审查**：每次重要修改后必须审查
+- **提交规范**：遵循约定式提交（Conventional Commits）
 
-## AI Agent Preferences
+## AI Agent 偏好
 
-<!-- TODO: How do you like AI agents to behave? -->
+<!-- TODO: 你喜欢 AI Agent 怎么配合你？ -->
 
-- Be direct and concise
-- Show reasoning before making changes
-- Ask when uncertain — don't guess
-- Prefer working code over perfect code
+- 直接、简洁
+- 做决定前展示推理过程
+- 不确定就问，不要瞎猜
+- 能跑的代码优于完美的代码
 
-## Environment
+## 工作环境
 
-### Desktop (Primary)
-- OS: Windows 11
-- GPU: [To be filled]
-- Primary dev machine
+### 台式机（主力）
+- 系统：Windows 11
+- GPU：[待填写]
+- 主要开发机器
 
-### Laptop
-- OS: [To be filled]
-- For mobile/remote work
+### 笔记本
+- 系统：[待填写]
+- 用于移动/远程办公
 
-## Session Patterns
+## 跨机器工作模式
 
-<!-- TODO: Describe how you typically work across machines -->
+<!-- TODO: 描述你通常在两台电脑之间怎么切换工作 -->

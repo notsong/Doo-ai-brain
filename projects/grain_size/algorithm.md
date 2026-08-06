@@ -1,23 +1,23 @@
-# Grain Size — Algorithm
+# 晶粒度 — 算法设计
 
-> Algorithm design, model architecture, and technical approach.
+> 算法设计、模型架构和技术方案。
 
-## Approach
+## 整体方案
 
-<!-- TODO: Overall algorithmic approach -->
+<!-- TODO: 总体的算法思路 -->
 
-## Model Architecture
+## 模型架构
 
-<!-- TODO: Model structure, layers, key components -->
+<!-- TODO: 模型结构、关键层、核心组件 -->
 
-## Data Pipeline
+## 数据管线
 
-<!-- TODO: Data preprocessing, augmentation, loading -->
+<!-- TODO: 数据预处理、增强、加载方式 -->
 
-## Key Parameters
+## 关键参数
 
-<!-- TODO: Important hyperparameters and their rationale -->
+<!-- TODO: 重要超参数及其选择理由 -->
 
-## Known Limitations
+## 已知局限
 
-<!-- TODO: What doesn't it handle well? -->
+<!-- TODO: 目前方案处理不了什么？ -->

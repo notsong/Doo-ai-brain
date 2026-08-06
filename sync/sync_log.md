@@ -1,14 +1,14 @@
-# Sync Log
+# 同步日志
 
-> Record of every brain sync operation.
-> Format: Date, Machine, Summary, Files Changed.
+> 每次大脑同步操作的记录。
+> 格式：日期、机器、摘要、变更文件。
 
-## Sync History
+## 同步历史
 
-| Date | Machine | Summary | Files Changed |
-|------|---------|---------|---------------|
+| 日期 | 机器 | 摘要 | 变更文件 |
+|------|------|------|----------|
 | - | - | - | - |
 
 ---
 
-*Format: `YYYY-MM-DD HH:MM` | `machine-name` | `one-line summary` | `list of files modified`*
+*格式：`YYYY-MM-DD HH:MM` | `机器名` | `一句话摘要` | `修改的文件列表`*

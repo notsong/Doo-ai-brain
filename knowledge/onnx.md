@@ -1,23 +1,23 @@
-# ONNX Knowledge
+# ONNX 知识
 
-> ONNX model export, optimization, and deployment patterns.
+> ONNX 模型导出、优化和部署模式。
 
-## Common Patterns
+## 常用模式
 
-<!-- TODO: Export patterns, opset version selection -->
+<!-- TODO: 导出模式、opset 版本选择 -->
 
-## Performance Tips
+## 性能技巧
 
-<!-- TODO: Quantization, graph optimization -->
+<!-- TODO: 量化、图优化 -->
 
-## Pitfalls
+## 踩过的坑
 
-<!-- TODO: Unsupported ops, version mismatches -->
+<!-- TODO: 不支持的算子、版本不匹配 -->
 
-## Deployment Notes
+## 部署笔记
 
-<!-- TODO: ONNX Runtime config, platform specifics -->
+<!-- TODO: ONNX Runtime 配置、平台差异 -->
 
-## Resources
+## 参考资料
 
-<!-- TODO: Useful references -->
+<!-- TODO: 有用的参考 -->

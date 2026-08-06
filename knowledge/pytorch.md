@@ -1,23 +1,23 @@
-# PyTorch Knowledge
+# PyTorch 知识
 
-> PyTorch patterns, tips, and pitfalls collected from projects.
+> 从项目中积累的 PyTorch 模式、技巧和坑。
 
-## Common Patterns
+## 常用模式
 
-<!-- TODO: Reusable PyTorch patterns -->
+<!-- TODO: 可复用的 PyTorch 代码模式 -->
 
-## Performance Tips
+## 性能技巧
 
-<!-- TODO: Dataloader optimization, mixed precision, etc. -->
+<!-- TODO: DataLoader 优化、混合精度训练等 -->
 
-## Pitfalls
+## 踩过的坑
 
-<!-- TODO: Common gotchas and how to avoid them -->
+<!-- TODO: 常见陷阱及避免方法 -->
 
-## Version Notes
+## 版本记录
 
-<!-- TODO: Version-specific issues encountered -->
+<!-- TODO: 版本相关的具体问题 -->
 
-## Resources
+## 参考资料
 
-<!-- TODO: Useful references, papers, tutorials -->
+<!-- TODO: 有用的参考链接、论文、教程 -->
