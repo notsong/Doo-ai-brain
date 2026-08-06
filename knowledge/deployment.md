@@ -4,47 +4,75 @@
 
 ## 常用模式
 
-<!-- TODO: 服务模式、API 设计 -->
+### 检测系统集成
+模型通过 JSON 配置文件注册到检测系统：
+```json
+{
+  "model_name": "1001_025_dinov3.pth",
+  "input_size": 1024,
+  "stride": 768,
+  "threshold": 0.5,
+  "postprocess": { "close_kernel": 3, "min_area": 150 }
+}
+```
+检测系统读取配置 → 加载模型 → 推理 → 后处理 → 输出 mask/JSON/灰度图。
+
+### PySide6 桌面应用打包
+```
+PyInstaller + .spec + runtime_hook.py + hiddenimports
+```
+关键配置：
+- `collect_all('PySide6')` 收集全部 Qt DLL
+- `collect_all('shiboken6')` 收集绑定
+- `runtime_hook.py` 运行时 `os.add_dll_directory()` 解决 DLL 搜索路径
 
 ## 工具
 
-<!-- TODO: Docker、PyInstaller、ONNX Runtime、Triton 等 -->
+| 工具 | 用途 |
+|------|------|
+| ONNX Runtime | 模型推理（CPU/CUDA） |
+| PyInstaller | Python 应用打包为独立 exe |
+| Docker | 服务端部署（待引入） |
 
 ## 踩过的坑
 
-### Git 推送 GitHub 被墙（GFW）
-
-**现象**：`git push` 报 `Recv failure: Connection was reset`，能 ping 通但连不上。
-
-**原因**：国内网络环境，GitHub HTTPS 直连被阻断。
-
-**解决**：配置 Git 走代理。Clash Verge 默认 HTTP 代理端口为 `7897`（不同客户端不同：Clash 通常 7890，Clash Verge 可能 7897）。
-
+### Git 推送被墙（GFW）
 ```bash
 git config --global http.proxy http://127.0.0.1:7897
 git config --global https.proxy http://127.0.0.1:7897
 ```
-
-验证代理端口是否可用：
-```bash
-curl -x http://127.0.0.1:7897 https://github.com -o /dev/null -w "%{http_code}"
-# 返回 200 即通
-```
+Clash Verge 默认端口 7897。验证：`curl -x http://127.0.0.1:7897 https://github.com`
 
 ### gh CLI 认证所需 Scope
+最小 Token scope：`repo`, `read:org`, `workflow`
 
-`gh auth login` 需要 Token 至少勾选三个 scope：
-- `repo` — 读写仓库
-- `read:org` — gh CLI 验证必需
-- `workflow` — 可选，方便后续加 CI/CD
+### PyInstaller + conda = DLL 地狱
+conda 的 ICU/MSVC DLL 与 PyInstaller 的依赖收集不一致，导致打包后 DLL 缺失或版本冲突。**根治方案**：用干净 pip venv 打包，不用 conda。
 
-如果用浏览器登录失败（被墙），选 Paste an authentication token，去 https://github.com/settings/tokens 创建。
+### ICU DLL 缺失诊断
+手写 PE 解析器检查导入表，对比 conda 与 dist 中 DLL 的 MD5。关键检查项：icuuc, icuin, icudt, icuio, icutu 五个 DLL。
 
 ## PyInstaller 笔记
 
-<!-- TODO: ML 模型打包的特殊问题 -->
+### Spec 文件要点
+```python
+a = Analysis(
+    ['doo_label/main.py'],
+    pathex=[],
+    binaries=[],
+    datas=[],
+    hiddenimports=['skimage', 'cv2', 'pyside6', 'shiboken6'],
+    hookspath=[],
+    runtime_hooks=['runtime_hook.py'],
+)
+```
+
+### 减小打包体积
+- 排除不需要的 Qt 模块（WebEngine, Multimedia 等）
+- onedir 模式（非 onefile）方便排障
+- 不要打包整个 conda 环境
 
 ## 参考资料
 
-- [GitHub CLI 安装](https://github.com/cli/cli#installation)
-- [GitHub Personal Access Token](https://github.com/settings/tokens)
+- PyInstaller 文档: https://pyinstaller.org/
+- GitHub CLI: https://github.com/cli/cli
