@@ -29,13 +29,15 @@ Doo-ai-brain 知识库初始化——已分析 3 个代码项目 + 1 个文档�
 - ✅ 3 个项目（DINOv3, U-Net, Doo_Label）深度分析并写入知识库
 - ✅ 工程师画像建立
 - ✅ 5 个知识文件（PyTorch, OpenCV, ONNX, CUDA, 部署）填充真实经验
+- ✅ Hermes（小H）接入共享大脑：克隆仓库、建立读写协议与技能、确认角色分工
 
 ## 下一步计划
 
 1. 分析 `ai_server` 项目（如果有独立路径）
-2. 笔记本配置 Doo-ai-brain 同步
-3. Dino_v3-plus 文档更新（README 与代码同步）
-4. Doo_Label DLL 打包问题根治
+2. 小H（Hermes）参与：技术方案设计、实验总结、知识库维护
+3. 笔记本配置 Doo-ai-brain 同步
+4. Dino_v3-plus 文档更新（README 与代码同步）
+5. Doo_Label DLL 打包问题根治
 
 ---
 
