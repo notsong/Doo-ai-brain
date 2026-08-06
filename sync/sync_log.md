@@ -9,7 +9,8 @@
 |------|------|------|----------|
 | 2026-08-06 10:30 | desktop | 初始化 Doo-ai-brain：架构设计、仓库搭建、skill 安装、Git 代理配置 | decisions/architecture_decisions.md, knowledge/deployment.md, profile/working_style.md, status/current_status.md, sync/sync_log.md |
 | 2026-08-06 11:30 | desktop | 分析 3 个代码项目 + 1 个文档目录，填充工程师画像、项目文档、知识库 | profile/*, projects/dinov3/*, projects/grain_size/*, projects/doo_label/*, knowledge/*, status/current_status.md, sync/sync_log.md |
-| 2026-08-06 12:01 | desktop | Hermes（小H）接入：克隆仓库、建立读写协议与技能、确认角色分工 | status/current_status.md, sync/sync_log.md |
+| 2026-08-06 12:01 | laptop | Hermes（小H）接入：克隆仓库、建立读写协议与技能、确认角色分工 | status/current_status.md, sync/sync_log.md |
+| 2026-08-06 15:36 | laptop | 修正角色定义：大H=台式机 Hermes 实例（非 Claude Code），小H=笔记本 Hermes；更新架构文档 | HERMES_START.md, AI_RULES.md, profile/working_style.md, status/current_status.md, sync/sync_log.md |
 
 ---
 

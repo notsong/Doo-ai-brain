@@ -75,11 +75,16 @@ git pull
 
 然后让 AI Agent 读取相关文件。
 
-## Hermes（未来）
+## Hermes（当前）
 
-Hermes 是我的长期 AI 技术大脑。它将：
+Hermes 是我的长期 AI 技术大脑，当前运行在两个实例上，共享同一知识库：
+
+- **大H**：台式机（Win11 主力机）上的 Hermes——长期大脑主力
+- **小H**：笔记本（Win10）上的 Hermes——长期记忆、技术方案设计、实验总结、知识管理
+
+职责：
 - 读取这个仓库获取项目上下文
 - 贡献知识和实验总结
 - 基于积累的经验帮助设计技术方案
 
-当 Hermes 激活时，更新 `status/current_status.md` 反映其角色。
+注意：**Hermes 不是 Claude Code**。Claude Code 是编码执行助手（`/brain-sync` 协议见上）。
