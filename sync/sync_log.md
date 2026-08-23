@@ -1,4 +1,4 @@
-# 同步日志
+﻿# 同步日志
 
 > 每次大脑同步操作的记录。
 > 格式：日期、机器、摘要、变更文件。
@@ -17,3 +17,4 @@
 *格式：`YYYY-MM-DD HH:MM` | `机器名` | `一句话摘要` | `修改的文件列表`*
 2026-08-06 16:30 | laptop | Hermes | 新增 knowledge/hermes-metis-workflow.md（Hermes+CC 协作模式）；decisions 追加 Metis 圆形视场/B.5/B.6 决策记录
 2026-08-07 11:40 | laptop | Hermes | 新增 knowledge/grain-size-grading.md——晶粒度评定方法全景（面积法/截点法/珠光体过滤/双重晶粒度双峰拟合+7图验证）
+2026-08-23 | laptop | Hermes | 沉淀：面积法全局统计（%RA/ΔG 公式口径）、DHTG 面积法移植（模型号硬编码 1001/24）、Codex CLI 独立审查工作流 | knowledge/grain-size-grading.md, knowledge/hermes-metis-workflow.md, decisions/architecture_decisions.md, sync/sync_log.md

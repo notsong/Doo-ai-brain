@@ -1,4 +1,4 @@
-# 晶粒度评定（GB/T 6394-2017）— 知识库
+﻿# 晶粒度评定（GB/T 6394-2017）— 知识库
 
 > Metis 金相分析系统晶粒度评定方法全景：面积法、截点法、珠光体过滤、双重晶粒度双峰拟合。
 > 代码位置：`D:\work\Metis\Metis.Module.AI.Algorithm\GrainSize\`（共享算法）+ `Metis.Module.AIAutoAnalysisHQL|LWGT`（业务模块）
@@ -22,6 +22,17 @@
 - 分母 = 圆面积 πr²（若用整图面积做分母，评级会系统性偏高）
 - 兼容性：`FovCenter`/`FovRadiusPx` 用可空参数（默认 null），不传时行为不变（BLT/DHTG/IMC 等 8 个模块零影响）
 - 双峰分析（JLDAnalysis_Double）尚未加圆形视场（待需求）
+
+### 面积法全局统计：相对误差 %RA 与置信区间 ΔG（2026-08-23）
+
+与截点法 B.2-B.6 对称的实现（HQL `JLDAnalysis_Area.cs` 408 行，DHTG 移植同款）：
+
+- **公式**：`G = 3.321928 × lg(N_A) - 2.954`（N_A = 单位面积晶粒数 个/mm²，代码 = `EffectiveGrainCount / 视场面积mm²`；手写式 `m²N/A` 与之等价，代码用像素标定换算无需显式放大倍数）
+- **统计对象 = 每张图的 N_A**（不是 G，与截点法统计 Ī 而非 G 对称）：n 张图 → 样本标准差 s(n-1) → t 查表 95%CI = t·s/√n（n<5→2.776、n>20→1.96）→ `%RA = ci95 / mean × 100`
+- **ΔG = 3.321928 × lg(1 + %RA/100)**（面积法系数；截点法用 6.643856 因其 G = -6.643856·lg(Ī)，lg 系数是 2×3.321928）
+- **收集条件**：NA>0 的图才参与（对称截点法 P>0）；n=1 → %RA=0；无有效图 → 两字段输出 0
+- **输出字段**（results.ai，用户拍板严格只加这俩）：`global_relative_error`、`global_confidence_interval`
+
 
 ## 截点法（JLDAnalysis_BG.cs）
 

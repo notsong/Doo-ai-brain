@@ -1,4 +1,4 @@
-# Hermes + Claude Code — Metis C# 协作模式
+﻿# Hermes + Claude Code — Metis C# 协作模式
 
 > 从 Metis 晶粒度项目实战中沉淀的 AI 协作工作流。可复用到任何「Hermes 诊断 + CC 编码」场景。
 
@@ -96,3 +96,34 @@ CC 可能在正确位置改了代码，也可能在错误位置。不能只看�
 ## 适用场景
 
 任何「分析需要人的判断、执行需要批量改代码」的任务都可用此模式。不限于 C#——Python、JS 等同理。
+
+
+## Codex CLI 独立代码审查（2026-08-23 实践）
+
+给改动做"第二双眼睛"——尤其无 git 项目时，用临时仓库呈现精确 diff 后让 Codex 独立审查。
+
+### 无 git 项目 → 临时 git 仓库呈现 diff
+
+```bash
+REV=/d/temp/codex_review_xxx && rm -rf $REV && mkdir -p $REV && cd $REV
+git init && git config core.autocrlf false          # ⚠️ 必须先关，见坑
+cp 备份的旧版文件 . && git add -A
+git config user.email/user.name                      # 临时仓库局部身份
+git commit -m base
+cp 新版文件 .                                        # 工作区 = 改动
+git diff --stat                                      # 应只显示真实改动行数
+```
+
+**autocrlf 坑**：全局 autocrlf=true 会把 CRLF 文件归一化成 LF 入库 → `git diff` 显示全文件重写（如 407+/292- 而实际只改 115 行）。修复：仓库局部 `core.autocrlf false` + 恢复旧版重新 `git commit --amend`。
+
+### Codex 调用
+
+```bash
+export HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897  # 必须，直连被墙
+codex exec --sandbox danger-full-access "任务描述"    # 后台跑 + pty=true
+```
+
+- 认证 = ChatGPT 订阅 OAuth（`~/.codex/auth.json`，模型 gpt-5.6-terra），烧订阅额度（实测 68 秒 ~23.4k tokens）
+- **只读审查靠提示词约束**（"只审查，禁止修改任何文件"），不依赖沙箱；`codex review` 子命令是 PR 场景，本地审查用 exec + git diff
+- 提示词要素：背景（改动目的）+ 检查要点（编号列表，给公式和对照文件）+ 输出格式（严重级别+行号+验证过的检查点清单）
+- 实测价值：独立验证 7 项检查点全过；顺带发现既有隐患（`_resultList.Add` 重复键会抛 ArgumentException——非本次改动引入，仅记录）
