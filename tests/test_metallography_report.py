@@ -49,4 +49,4 @@ def test_report_summary_matches_fixed_data(tmp_path: Path):
     summary = pd.read_csv(output_dir / "metallography_summary.csv")
     assert len(summary) == 7
     assert summary["pass"].eq(True).all()
-    assert (output_dir / "AI金相检测项目性能验证报告_模拟数据.docx").stat().st_size > 50_000
+    assert (output_dir / "AI金相检测项目性能验证报告.docx").stat().st_size > 50_000
