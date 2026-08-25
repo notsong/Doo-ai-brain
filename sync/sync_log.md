@@ -20,3 +20,4 @@
 2026-08-23 | laptop | Hermes | 沉淀：面积法全局统计（%RA/ΔG 公式口径）、DHTG 面积法移植（模型号硬编码 1001/24）、Codex CLI 独立审查工作流 | knowledge/grain-size-grading.md, knowledge/hermes-metis-workflow.md, decisions/architecture_decisions.md, sync/sync_log.md
 
 2026-08-23 21:36 | desktop | 大H | 新增 CHATGPT_START.md——ChatGPT 接入共享大脑指南（顾问角色定位、读取/贡献协议） | CHATGPT_START.md, sync/sync_log.md
+2026-08-25 | desktop | 生成简洁 AI 金相性能验证报告模板：夹杂物、晶粒度、脱碳层仅展示 IoU/P/R 模拟指标及基础柱状图 | scripts/create_metallography_report.py, tests/test_metallography_report.py
