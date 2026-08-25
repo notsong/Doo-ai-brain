@@ -13,6 +13,9 @@ def test_summary_has_seven_units_and_three_metrics():
     assert (summary["iou"] >= 0.85).all()
     assert (summary["precision"] >= 0.90).all()
     assert (summary["recall"] >= 0.95).all()
+    decarb = summary[summary["project"] == "脱碳层"].set_index("label")
+    assert decarb.loc["镶嵌-总脱", "iou"] == 0.941
+    assert decarb.loc["非镶嵌-总脱", "iou"] == 0.912
 
 
 def test_charts_are_created(tmp_path: Path):

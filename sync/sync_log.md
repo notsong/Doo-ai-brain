@@ -22,3 +22,4 @@
 2026-08-23 21:36 | desktop | 大H | 新增 CHATGPT_START.md——ChatGPT 接入共享大脑指南（顾问角色定位、读取/贡献协议） | CHATGPT_START.md, sync/sync_log.md
 2026-08-25 | desktop | 生成简洁 AI 金相性能验证报告模板：夹杂物、晶粒度、脱碳层仅展示 IoU/P/R 模拟指标及基础柱状图 | scripts/create_metallography_report.py, tests/test_metallography_report.py
 2026-08-25 | desktop | 依据客户填写的真实性能指标更新 AI 金相性能验证报告，并补充按检测任务的指标高低原因分析 | scripts/create_metallography_report.py, tests/test_metallography_report.py, sync/sync_log.md
+2026-08-25 | desktop | 纠正脱碳层镶嵌/非镶嵌数据映射，并按镶嵌总脱边缘更清晰、非镶嵌总脱边缘不明显的实际特征修订分析 | scripts/create_metallography_report.py, tests/test_metallography_report.py, sync/sync_log.md
